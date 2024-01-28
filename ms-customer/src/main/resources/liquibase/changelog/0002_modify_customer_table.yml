@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0002_modify_customer
+      author: Mamishov Elmaddin
+      description: "customer table modified"
+
+      changes:
+        - addColumn:
+            tableName: customers
+            columns:
+              - column:
+                  name: password
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false

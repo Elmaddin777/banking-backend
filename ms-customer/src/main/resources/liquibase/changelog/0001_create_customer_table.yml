@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0001_create_customer
+      author: Mamishov Elmaddin
+      description: "customer table created"
+
+      changes:
+        - createTable:
+            tableName: customers
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: surname
+                  type: VARCHAR(255)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: birth_date
+                  type: DATE
+              - column:
+                  constraints:
+                    nullable: false
+                  name: gsm_number
+                  type: VARCHAR(15)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: balance
+                  type: DECIMAL(10, 2)

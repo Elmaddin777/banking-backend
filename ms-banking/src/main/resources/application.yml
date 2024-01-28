@@ -1,0 +1,11 @@
+application:
+  client:
+    customer:
+      url: localhost:8081/api/v1/customer
+    mkr:
+      url: localhost:8082/api/v1/transaction
+
+token:
+  signing:
+    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+

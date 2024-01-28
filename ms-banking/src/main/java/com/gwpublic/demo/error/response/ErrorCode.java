@@ -1,0 +1,13 @@
+package com.gwpublic.demo.error.response;
+
+public enum ErrorCode {
+
+    INTERNAL_SERVER_ERROR,
+    SERVICE_PROVIDER_ERROR,
+    REQUEST_NOT_VALID,
+    SERVICE_PROVIDER_READ_TIMEOUT,
+    SERVICE_PROVIDER_CONNECT_TIMEOUT,
+    CUSTOMER_ERROR,
+    TRANSACTION_ERROR
+
+}

@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ms_banking?currentSchema=banking
+    username: ms_banking
+    password: 'eHa7JyrcnXDXlQvS8JV3tYJdanMkIlOw'
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+  liquibase:
+    enabled: true
+    drop-first: false
+    change-log: classpath:/liquibase/changelog-master.yml
+
+server:
+  port: 8082
